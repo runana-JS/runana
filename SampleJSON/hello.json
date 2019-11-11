@@ -1,0 +1,1 @@
+{"sprite":[{"name":"common","dataS":[{"name":"root","dataU":{"21":{"pos":21,"name":"PUTS","type":"2302","dir":15,"val":["@str"]},"23":{"pos":23,"name":"VAR","type":"3000","dir":15,"val":["@str","\"Hello World\""]},"27":{"pos":27,"name":"Start","type":"3302","dir":15,"val":[]}},"selectedLayer":0}],"selectedDataSet":0}],"selectedSprite":0}
