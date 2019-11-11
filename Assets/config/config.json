@@ -1,0 +1,213 @@
+{
+  "cubelist": [
+    {
+      "type": 1,
+      "name": "Edge",
+      "varcap": [
+        "time"
+      ],
+      "descreption": "Cube間を連結するもの。timeだけ待機する。"
+    },
+    {
+      "type": 1000,
+      "name": "EVAL",
+      "varcap": [
+        "content"
+      ],
+      "descreption": "eval(content)"
+    },
+    {
+      "type": 1105,
+      "name": "JUMP",
+      "varcap": [
+        "mark"
+      ],
+      "descreption": "Jump to mark"
+    },
+    {
+      "type": 1106,
+      "name": "RJMP",
+      "varcap": [
+        "mark"
+      ],
+      "descreption": "If false jump to mark"
+    },
+    {
+      "type": 1201,
+      "name": "SRT",
+      "varcap": [
+        "variable"
+      ],
+      "descreption": "variable.sort!"
+    },
+    {
+      "type": 1202,
+      "name": "RSRT",
+      "varcap": [
+        "variable"
+      ],
+      "descreption": "variable.sort!{|a b| b<=>a}"
+    },
+    {
+      "type": 1301,
+      "name": "IF",
+      "varcap": [
+        "content"
+      ],
+      "descreption": "contentを判別し、trueならばtrueのメッセージを出す。falseならばfalseのメッセージを出す。"
+    },
+    {
+      "type": 1302,
+      "name": "REV",
+      "varcap": [],
+      "descreption": "メッセージがtrueは通さず。メッセージがfalseの時にtrueにして通す。基本的にIFと組み合わせて使う。"
+    },
+    {
+      "type": 1303,
+      "name": "FOR",
+      "varcap": [
+        "content"
+      ],
+      "descreption": "IFと同じ"
+    },
+    {
+      "type": 1304,
+      "name": "WHL",
+      "varcap": [
+        "content"
+      ],
+      "descreption": "C言語のwhile(content) IFと同じ"
+    },
+    {
+      "type": 1401,
+      "name": "CALC",
+      "varcap": [
+        "content"
+      ],
+      "descreption": "eval(content)と同じ"
+    },
+    {
+      "type": 2000,
+      "name": "LINE",
+      "varcap": [
+        "Variable_name",
+        "Source"
+      ],
+      "descreption": "eval(variable_name=Source)"
+    },
+    {
+      "type": 2101,
+      "name": "GETS",
+      "varcap": [
+        "variable_name"
+      ],
+      "descreption": "variable_name=gets"
+    },
+    {
+      "type": 2102,
+      "name": "IN[]",
+      "varcap": [
+        "variables_name",
+        "split_words"
+      ],
+      "descreption": "variable_name=gets.split(\"split_words\").map!(&:to_i)"
+    },
+    {
+      "type": 2302,
+      "name": "PUTS",
+      "varcap": [
+        "content"
+      ],
+      "descreption": "puts content"
+    },
+    {
+      "type": 2303,
+      "name": "PRT",
+      "varcap": [
+        "content"
+      ],
+      "descreption": "print content"
+    },
+    {
+      "type": 2304,
+      "name": "OUT[]",
+      "varcap": [
+        "variable_name",
+        "split_words"
+      ],
+      "descreption": "puts #{variable_name}.join('#{split_words}')"
+    },
+    {
+      "type": 3000,
+      "name": "VAR",
+      "varcap": [
+        "variable_name",
+        "initialize"
+      ],
+      "descreption": "eval(variable_name+\"=\"+\"initialize)"
+    },
+    {
+      "type": 3101,
+      "name": "MRK",
+      "varcap": [
+        "mark_name"
+      ],
+      "descreption": "Jumpの行き着く先です。"
+    },
+    {
+      "type": 3302,
+      "name": "Start",
+      "varcap": [],
+      "descreption": "開始場所"
+    },
+    {
+      "type": 3201,
+      "name": "TOI",
+      "varcap": [
+        "variable_name"
+      ],
+      "descreption": "variable_name.to_i"
+    },
+    {
+      "type": 3202,
+      "name": "MTOI",
+      "varcap": [
+        "variable_name"
+      ],
+      "descreption": "variable_name.map!(&:to_i)"
+    },
+    {
+      "type": 3203,
+      "name": "TOF",
+      "varcap": [
+        "variable_name"
+      ],
+      "descreption": "variable_name.to_f"
+    },
+    {
+      "type": 3204,
+      "name": "MTOF",
+      "varcap": [
+        "variable_name"
+      ],
+      "descreption": "variable_name.map!(&:to_f)"
+    },
+    {
+      "type": 3205,
+      "name": "TOS",
+      "varcap": [
+        "variable_name"
+      ],
+      "descreption": "variable_name.to_s"
+    },
+    {
+      "type": 3206,
+      "name": "MTOS",
+      "varcap": [
+        "variable_name"
+      ],
+      "descreption": "variable_name.map!(&:to_s)"
+    }
+
+  ]
+}
